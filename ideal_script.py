@@ -1,4 +1,5 @@
 # Copyright (C) 2018 Oyeniran Adeboye Stephen, Olusiji
+#IDEAL script for control + Rand for 50 PTNS.
 import reset
 import load_memory
 import op2_template
