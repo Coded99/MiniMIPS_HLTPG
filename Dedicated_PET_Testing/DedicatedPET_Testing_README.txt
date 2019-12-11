@@ -1,6 +1,7 @@
 Step 1:
 
 Removed all the data in data.txt.
+The code in the pseudo_template.py is reverted back to the original, so that it can generate PET test program for add, sub...logic.txt.
 
 Step 2:
 
