@@ -1,4 +1,5 @@
 # Copyright (C) 2018 Oyeniran Adeboye Stephen, Olusiji
+#THE 4 LINES COMMENTED OUT IN THE PET TEMPLATE SECTION HAD NO EFFECT IN THE FC, IT ONLY ADDED 4 morE LINES IN THE TST.SRC FILE
 import reset
 import load_memory
 import op2_template
