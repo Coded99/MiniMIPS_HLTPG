@@ -16,7 +16,7 @@ def random_template(inputFile, out, instruct, result_register):
   if(instruction[0:] =="add" or instruction[0:] =="sub"):
       out.write("jal init_cp\n")
   #out.write("operation_"+instruction+":\n")
-  out.write("operation_"+instruction+"_psuedo:\n")
+  out.write("operation_"+instruction+"_random:\n")
   offset = 0
   register = 2
   outline = []
@@ -163,23 +163,23 @@ def make_random_template(para, outputFile, result_register):
         instruction = instr[0:]
         if (catergory == 'p_'):
           if (instruction == 'addu' or instruction == 'add'):
-            inputFile = '../input/pseudo_input/random.txt'
+            inputFile = '../input/random_input/random.txt'
             random_template(inputFile, outputFile, instruction, result_register)
             outputFile.write("\n")
           elif(instruction == 'subu'or instruction == 'sub'):
-            inputFile = '../input/pseudo_input/random.txt'
+            inputFile = '../input/random_input/random.txt'
             random_template(inputFile, outputFile, instruction, result_register)
             outputFile.write("\n")     
           elif(instruction == 'or' or instruction == 'xor' or instruction == 'nor' or instruction == 'and'):
-            inputFile = '../input/pseudo_input/random.txt'
+            inputFile = '../input/random_input/random.txt'
             random_template(inputFile, outputFile, instruction, result_register)
             outputFile.write("\n")    
           elif(instruction == 'sll' or instruction == 'srl' or instruction == 'slr' or instruction == 'sra' or instruction == 'srav' or instruction == 'slt' or instruction == 'sltu'):
-            inputFile = '../input/pseudo_input/random.txt'
+            inputFile = '../input/random_input/random.txt'
             random_template(inputFile, outputFile, instruction, result_register)
             outputFile.write("\n") 
           elif(instruction == 'mult' or instruction == 'multu'):
-            inputFile = '../input/pseudo_input/random.txt'
+            inputFile = '../input/random_input/random.txt'
             random_template(inputFile, outputFile, instruction, result_register)
             outputFile.write("\n")     
       except IndexError:
