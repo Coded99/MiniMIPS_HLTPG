@@ -140,7 +140,7 @@ pseudo_template.make_pseudo_template(parameter,out, result_register)
 ##template for random data
 out.write(";..........random-data-path test..........;\n")
 out.write(" lui $%s, %d\n" % (result_address, 1))
-out.write(" ori $%s, $%s, %d\n\n" % (result_address, result_address, 10000))
+out.write(" ori $%s, $%s, %d\n\n" % (result_address, result_address, 15000))
 random_template.make_random_template(parameter,out, result_register)
 
 #break
